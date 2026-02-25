@@ -1,329 +1,87 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>001plugin Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { margin:0; font-family:'Inter', sans-serif; background:#f5f5f5; color:#333; }
+        header { background:#5865F2; color:#fff; padding:40px 20px; text-align:center; }
+        header h1 { margin:0; font-size:2.5rem; }
+        header p { font-size:1.1rem; margin-top:10px; color:#dde; }
 
-<title>WooCommerce Discord Alerts</title>
+        nav { text-align:center; margin:20px 0; }
+        nav a { margin:0 15px; text-decoration:none; color:#5865F2; font-weight:600; }
+        nav a:hover { color:#4752c4; }
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+        section { max-width:900px; margin:40px auto; padding:0 20px; }
+        h2 { color:#5865F2; margin-bottom:20px; }
 
-<style>
+        .project { background:#fff; padding:20px; border-radius:8px; margin-bottom:20px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+        .project h3 { margin-top:0; }
+        .project p { margin-bottom:10px; }
+        .project a { color:#5865F2; text-decoration:none; font-weight:600; }
+        .project a:hover { color:#4752c4; }
 
-body{
-margin:0;
-font-family:Arial;
-background:#0f172a;
-color:white;
-}
+        footer { text-align:center; padding:30px 20px; font-size:0.9rem; color:#777; }
+        footer a { color:#5865F2; text-decoration:none; }
+        footer a:hover { color:#4752c4; }
 
-.header{
-background:#020617;
-text-align:center;
-padding:70px 20px;
-}
-
-.header h1{
-font-size:42px;
-margin-bottom:10px;
-}
-
-.header p{
-font-size:18px;
-opacity:0.8;
-}
-
-.button{
-
-background:#5865F2;
-padding:14px 24px;
-border-radius:8px;
-color:white;
-text-decoration:none;
-font-weight:bold;
-margin:8px;
-display:inline-block;
-
-}
-
-.container{
-
-max-width:1000px;
-margin:auto;
-padding:20px;
-
-}
-
-.section{
-
-background:#1e293b;
-padding:25px;
-margin-top:25px;
-border-radius:12px;
-
-}
-
-h2{
-margin-top:0;
-}
-
-.feature{
-
-margin:8px 0;
-
-}
-
-.price{
-
-font-size:28px;
-font-weight:bold;
-
-}
-
-.footer{
-
-text-align:center;
-padding:30px;
-opacity:0.6;
-
-}
-
-</style>
-
+        @media (max-width:600px){
+            header h1 { font-size:2rem; }
+        }
+    </style>
 </head>
-
-
 <body>
 
-
-<div class="header">
-
-<h1>WooCommerce Discord Alerts</h1>
-
-<p>Real-Time WooCommerce Notifications Directly to Discord</p>
-
-<a class="button" href="#buy">Buy Plugin</a>
-
-<a class="button" href="#contact">Contact</a>
-
-</div>
-
-
-
-<div class="container">
-
-
-<div class="section">
-
-<h2>About The Plugin</h2>
-
-<p>
-
-WooCommerce Discord Alerts is a lightweight plugin that sends real-time order notifications directly to your Discord server.
-
-Perfect for store owners and teams who want instant updates.
-
-</p>
-
-</div>
-
-
-
-<div class="section">
-
-<h2>Features</h2>
-
-<div class="feature">✔ New Order Alerts</div>
-
-<div class="feature">✔ Order Status Notifications</div>
-
-<div class="feature">✔ Clean Discord Embeds</div>
-
-<div class="feature">✔ Simple Setup</div>
-
-<div class="feature">✔ Fast and Lightweight</div>
-
-<div class="feature">✔ Works with All WooCommerce Stores</div>
-
-</div>
-
-
-
-<div class="section">
-
-<h2>Installation Guide</h2>
-
-<p>
-
-1. Download plugin ZIP file
-
-<br><br>
-
-2. Go to WordPress Admin → Plugins → Add New
-
-<br><br>
-
-3. Upload Plugin ZIP
-
-<br><br>
-
-4. Activate Plugin
-
-<br><br>
-
-5. Paste Discord Webhook URL
-
-<br><br>
-
-6. Done ✅
-
-</p>
-
-</div>
-
-
-
-<div class="section">
-
-<h2>Documentation</h2>
-
-<p>
-
-Full documentation is included with the plugin.
-
-Easy setup in under 2 minutes.
-
-No coding required.
-
-</p>
-
-</div>
-
-
-
-<div id="buy" class="section">
-
-<h2>Pricing</h2>
-
-<div class="price">
-
-$15 Lifetime License
-
-</div>
-
-<br>
-
-Includes:
-
-<br><br>
-
-✔ Lifetime Updates
-
-<br>
-
-✔ Support
-
-<br>
-
-✔ Documentation
-
-</div>
-
-
-
-<div class="section">
-
-<h2>Payment Methods</h2>
-
-<p>
-
-Bkash:
-
-<br>
-
-017XXXXXXXX
-
-<br><br>
-
-Crypto:
-
-<br>
-
-USDT TRC20
-
-<br>
-
-YourWalletAddress
-
-<br><br>
-
-After payment send proof:
-
-<br>
-
-Discord: yourname
-
-<br>
-
-Email: your@email.com
-
-</p>
-
-</div>
-
-
-
-<div id="contact" class="section">
-
-<h2>Contact</h2>
-
-<p>
-
-Discord: yourname
-
-<br><br>
-
-Email: your@email.com
-
-</p>
-
-</div>
-
-
-
-<div class="section">
-
-<h2>License</h2>
-
-<p>
-
-This plugin is proprietary software.
-
-Purchase includes a license for one website.
-
-Redistribution or reselling is prohibited.
-
-</p>
-
-</div>
-
-
-
-</div>
-
-
-
-<div class="footer">
-
-WooCommerce Discord Alerts Plugin
-
-<br>
-
-© 2026 Ryuzaki San
-
-</div>
-
-
+<header>
+    <h1>001plugin Portfolio</h1>
+    <p>Professional WordPress & WooCommerce Plugins</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About 001plugin</h2>
+    <p>001plugin is a premium plugin development brand by 001root. We create professional, secure, and fully-featured WordPress plugins for businesses and developers.</p>
+</section>
+
+<section id="projects">
+    <h2>Featured Projects</h2>
+
+    <div class="project">
+        <h3>WooCommerce Discord Order Alerts</h3>
+        <p>Send WooCommerce order notifications directly to Discord with embeds, colors, and customizable templates.</p>
+        <a href="https://001plugin.dev/wc-discord-alerts" target="_blank">View Plugin</a>
+    </div>
+
+    <div class="project">
+        <h3>WP Advanced Analytics</h3>
+        <p>A powerful analytics plugin for WordPress that integrates Google Analytics, charts, and real-time reports.</p>
+        <a href="#" target="_blank">View Plugin</a>
+    </div>
+
+    <div class="project">
+        <h3>Premium WooCommerce Tools</h3>
+        <p>Enhance your WooCommerce store with automated alerts, stock management, and advanced order tracking features.</p>
+        <a href="#" target="_blank">View Plugin</a>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:support@001plugin.dev">support@001plugin.dev</a></p>
+    <p>Website: <a href="https://001plugin.dev" target="_blank">https://001plugin.dev</a></p>
+</section>
+
+<footer>
+    &copy; 2026 001plugin / 001root. All Rights Reserved.
+</footer>
 
 </body>
-
 </html>
